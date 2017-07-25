@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mindnode</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="viewport" content="width=device-width">
+
+    <!--<link rel="stylesheet" href="build/bundle.css">-->
+    <link rel="stylesheet" href="src/styles/main.css">
+
+</head>
+<body>
+
+<svg version="1.1" id="mainSVG"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml"
+     x="0px" y="0px" width="100%" height="100%"  style="enable-background:new 0 0 775 1334;">
+
+    <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+        <filter id="front_center_blur">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+        </filter>
+        <filter id="back_center_blur">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+        </filter>
+        <filter id="back_blur">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+        </filter>
+        <filter id="glow">
+            <feColorMatrix type="matrix"
+                           values=
+                                   "0 0 0 0   0
+                 0 0 0 0.9 0
+                 0 0 0 0.9 0
+                 0 0 0 1   0"/>
+            <feGaussianBlur stdDeviation="5.5" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <rect id="backrect" class="backrect" width="100%" height="100%" fill="#D8D8D8"/>
+
+    <g id="space">
+
+        <rect class="space_back" id="space_back" x="0" y="0" width="100%" height="100%"/>
+
+        <g class="node_filter">
+
+            <g class="at_depth"></g>
+
+            <g class="panel_view_back"></g>
+
+            <g class="connectors"></g>
+            <g class="all_nodes">
+
+            <!--<g class="node_filter" style="filter:url( #goo )">-->
+
+                <g class="focus_children"></g>
+                <g class="fade"></g>
+                <g class="focus"></g>
+                <g class="root_node_view"></g>
+
+                <g class="at_component_base"></g>
+                <g id="gooey_ui_components" class="ui_components">
+
+                    <!--<g id="component_menu_container" class="menu_container"></g>-->
+
+                </g>
+
+            <!--</g>-->
+
+        </g>
+
+            <g class="at_shallow"></g>
+
+        </g>
+
+        <g id="normal_ui_components" class="ui_components"></g>
+
+    </g>
+
+</svg>
+
+
+<!--CDN link for TweenMax-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<script src="build/bundle.js"></script>
+
+</body>
+</html>

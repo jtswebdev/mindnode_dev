@@ -1,0 +1,19 @@
+{
+  "name": "mindnode-development",
+  "version": "1.0.0",
+  "description": "App Development Process",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jordan Shapiro",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "tree-model": "^1.0.6",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

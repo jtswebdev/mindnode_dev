@@ -1,0 +1,250 @@
+
+body {
+
+    background-color: #292a2d;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.backrect {
+
+    fill: #1a1b1d;
+
+}
+
+
+.node {
+
+    fill: white;
+    stroke: #bcffca;
+    stroke-width: 2;
+
+}
+
+.node:hover {
+
+    fill: #C7C7C7;
+    stroke-width: 4;
+
+}
+
+
+.widget_back {
+
+    /*fill: lightslategray;*/
+    /*stroke: antiquewhite;*/
+    /*stroke-width: 1;*/
+    /*cursor: default;*/
+    /*pointer-events: none;*/
+
+    /*fill: #c9cfd2;*/
+    fill: #c7c7c7;
+    stroke: #bcffca;
+    stroke-width: 2;
+    cursor: pointer;
+
+    /*-webkit-filter: url("#glow");*/
+    /*filter: url("#glow");*/
+    fill-opacity: 1;
+
+}
+
+.widget_text_div {
+
+    vertical-align: middle;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: #a7a7a7;
+    border: 1px solid #596572;
+    width: 190px; /* 210 */
+    /*height: 25px;*/
+    line-height: 25px;
+
+}
+
+.widget_text_area {
+
+    position: relative;
+    resize: none;
+    background-color: #c5c8cc;
+    /*width: 100%;*/
+    width: 190px;
+    height: 100px; /* 25 */
+    line-height: 25px;
+    font-size: small;
+    padding: 5px;
+    padding-left: 10px;
+
+}
+
+
+.text_input {
+
+    position: relative;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: fantasy;
+    color: lightgray;
+    /*border: none;*/
+    /*background-color: #1a1b1d;*/
+    background-color: transparent;
+    border-bottom: 2px solid #bcffca;
+    cursor: pointer;
+    fill-opacity: 1;
+
+}
+#name_text_input {
+
+    border: none;
+    border-left: 2px solid rgba( 188, 255, 202, 1 );
+    border-right: 2px solid rgba( 188, 255, 202, 1 );
+    /*border-top: 1px solid rgba( 188, 255, 202, 1 );*/
+    /*border-bottom: 1px solid rgba( 188, 255, 202, 1 );*/
+    background: rgba( 188, 255, 202, 0.5 ); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( 0deg, rgba( 188, 255, 202, 0.5 ), rgba( 188, 255, 202, 0.1 )); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 0deg, rgba( 188, 255, 202, 0.5 ), rgba( 188, 255, 202, 0.1 )); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( 0deg, rgba( 188, 255, 202, 0.5 ), rgba( 188, 255, 202, 0.1 )); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 0deg, rgba( 188, 255, 202, 0.5 ), rgba( 188, 255, 202, 0.1 )); /* Standard syntax (must be last) */
+
+}
+#creation_name_text_input {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid #bcffca;
+
+}
+
+#creation_text_text_input {
+
+    background-color: #444647;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #c5c8cc;
+    border-right: 1px solid #c5c8cc;
+    border-top: 1px solid #c5c8cc;
+
+}
+
+.canvas_back {
+
+    fill: #c9cfd2;
+    stroke: #bcffca;
+    stroke-width: 2;
+    cursor: pointer;
+    /*-webkit-filter: url("#glow");*/
+    /*filter: url("#glow");*/
+    fill-opacity: 1;
+
+}
+
+
+.svg_button_back {
+
+    /*fill: lightslategray;*/
+    /*stroke: lightcyan;*/
+
+    /*fill: #c9cfd2;*/
+    fill: #c7c7c7;
+    stroke: #bcffca;
+    stroke-width: 2;
+    cursor: pointer;
+
+    /*-webkit-filter: url("#glow");*/
+    /*filter: url("#glow");*/
+    fill-opacity: 1;
+
+}
+.svg_button_back:hover {
+
+    /*fill-opacity: .8;*/
+    stroke-width: 4;
+
+    /*stroke: #444647;*/
+    /*-webkit-filter: url(#glow);*/
+    /*transform-origin: center;*/
+    /*transform: rotate(180deg);*/
+
+}
+
+.svg_button {
+
+    fill: #c9cfd2;
+    stroke: #bcffca;
+    stroke-width: 2;
+    cursor: pointer;
+
+    /*-webkit-filter: url("#glow");*/
+    /*filter: url("#glow");*/
+    fill-opacity: 1;
+
+}
+
+
+
+
+#edit_svg_button {
+
+    stroke: none;
+    stroke-width: 0;
+    -webkit-filter: none;
+    filter: none;
+
+}
+
+
+#edit_svg_button > .svg_button_back {
+
+    stroke: none;
+    stroke-width: 0;
+    -webkit-filter: none;
+    filter: none;
+
+}
+
+
+
+
+.button_text_div {
+
+    font-size: xx-large;
+    color: white;
+
+}
+
+
+
+.selection_back {
+
+    fill: #9df3ff;
+    stroke: #bcffca;
+
+}
+
+.selection_back:hover {
+
+    fill-opacity: .9;
+    transform-origin: center;
+    transform: scale(1.1);
+
+}
+
+
+.black_hole_rect {
+
+    fill: #000000;
+    /*stroke: red;*/
+
+}
+
+
+#details_widget {
+    width:800px;
+    height:500px;
+}
